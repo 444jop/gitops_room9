@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: test-client-app
+  name: test-client-app-cluster-b
   namespace: argocd
 spec:
   project: default
