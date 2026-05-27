@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/444jop/gitops_room9.git
     targetRevision: main
-    path: apps/nginx
+    path: apps/nginx/overlays/cluster-b
 
   destination:
     name: 002-cluster
