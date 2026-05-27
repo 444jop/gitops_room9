@@ -1,0 +1,11 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: default-deny-nginx-ingress
+  namespace: default
+spec:
+  podSelector:
+    matchLabels:
+      app: nginx # 이 네트워크 폴리시가 적용될 pod의 레이블 선택기
+  policyTypes:
+    - Ingress
